@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=t%></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+ <%-include('../partials/nav.ejs');%>
+   
+    <div class="container">
+        <div class="pici">
+            <img id="pic" src="https://www.vendella.co.nz/content/uploads/2021/10/0024_KT4163-1000x1000.jpg" alt="">
+        </div>
+        <div class="desc">
+            <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Coffee Mug</h2>
+            <h1> White Coffee mug</h1>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, explicabo!</h3> 
+            <h2 id="price"> $145    <del style="color: gray;"> $<%=price%></del></h2>
+            <button id="button"> Add to cart<%=oiii%> </button>
+        </div>
+    </div>
+</body>
+</html>
