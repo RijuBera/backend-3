@@ -10,14 +10,14 @@ import cors from "cors";
 //     credential:true,
 //     optionsSuccessStatus:204
       
-// }
+// // // }
 
 const app=express();
+app.use(cors())
 app.set("view engine","ejs")
 app.use(express.static('public'))
 app.use(router);
 app.use(product);
-app.use(cors())
 
 app.get('/k',(req,res)=>{
     res.send(`${j}+${k}`)
@@ -28,3 +28,23 @@ app.listen(4000,()=>{
 
 
 
+// import express from "express";
+// import cors from "cors";
+// import router from "./routes/index.js";
+// import product from "./routes/products.js";
+
+// const app = express();
+
+// app.use(cors()); 
+// app.set("view engine", "ejs");
+// app.use(express.static('public'));
+// app.use(router);
+// app.use(product);
+
+// app.get('/k', (req, res) => {
+//     res.send(`${j}+${k}`);
+// });
+
+// app.listen(3000, () => {
+//     console.log("Server is running on port 3000");
+// });
